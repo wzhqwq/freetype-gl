@@ -95,7 +95,7 @@ create_demo(distance-field-3 distance-field-3.c)
 if(FONTCONFIG_FOUND)
     include_directories(${FONTCONFIG_INCLUDE_DIR})
     create_demo(markup markup.c)
-    target_link_libraries(markup ${Fontconfig_LIBRARY})
+    target_link_libraries(markup ${FONTCONFIG_LIBRARY})
 endif()
 
 if(ANT_TWEAK_BAR_FOUND)
